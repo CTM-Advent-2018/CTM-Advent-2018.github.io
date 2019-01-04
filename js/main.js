@@ -11,6 +11,9 @@
 			} else {
 				content.style.display = "block";
 			}
+			
+			var img = content.getElementsByClassName("content-img")[0];
+			img.setAttribute("src", img.getAttribute("data-src"));
 		});
 	}
 
@@ -35,5 +38,5 @@
 	addTooltip("length-tag-medium", "Moderately sized with some element of exploration. Gear is a good mix of being given and needing to be found.");
 	addTooltip("length-tag-long", "Comparable scale to an area in a full CTM map. Usually requires more collecting, crafting, and general survival.");
 
-	addTooltip("version-tag", "Compatible Minecraft versions");
+	addTooltip("version-tag", "Compatible Minecraft versions.");
 })();
