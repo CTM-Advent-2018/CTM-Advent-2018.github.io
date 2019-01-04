@@ -1,0 +1,135 @@
+
+body {
+	font-family: "Lato";
+	margin: 0;
+	background-color: #f0f0f0;
+	color: #222222;
+	counter-reset: map-num;
+}
+
+p {
+	margin-top: 0;
+}
+
+#navbar {
+	height: 50px;
+	line-height: 50px;
+	width: 100%;
+	background-color: #222222;
+	padding: 10px 30px;
+	font-family: "Roboto Slab";
+	font-size: 25px;
+	font-weight: bold;
+	color: #fdfdfd;
+}
+
+#navbar-icon {
+	vertical-align: middle;
+	height: 100%;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+#maps-section {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	width: 70%;
+}
+
+.flat-button {
+	background-color: #000000;
+	color: #ffffff;
+	cursor: pointer;
+	border-radius: 10px;
+	text-align: center;
+	padding: 9px;
+	font-family: "Roboto Slab";
+	font-size: 15px;
+}
+
+.flat-button:hover {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.button-primary { background-color: #4289f4; }
+.button-primary:hover { background-color: #3269bc; }
+
+.button-secondary { background-color: #41a3f4; }
+.button-secondary:hover { background-color: #327bbc; }
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+	background-color: #dddddd;
+	color: #444444;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	font-family: "Roboto Slab";
+}
+
+#maps-section .collapsible:nth-child(2n+1) { background-color: #e2e2e2; }
+#maps-section .collapsible:nth-child(4n+1) { background-color: #d0d0d0; }
+#maps-section .collapsible:nth-child(2n+1):hover,
+#maps-section .collapsible:nth-child(4n+1):hover { background-color: #222222;  color: #fdfdfd; text-decoration: underline; }
+
+.item-title:before {
+	counter-increment: map-num;
+	content: "#" counter(map-num);
+	margin-right: 20px;
+}
+
+.item-title {
+	line-height: 30px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.item-description {
+	float: right;
+	color: #fdfdfd;
+	vertical-align: middle;
+}
+
+.description-tag {
+	display: inline-block;
+	padding: 5px;
+	padding-right: 8px;
+	background-color: black;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.color-green-0 { background-color: #00aa33; }
+.color-red-0 { background-color: #ff0000; }
+
+.theme-dark { background-color: #444444; }
+
+/* Style the collapsible content. Note: hidden by default */
+.collapsible-content {
+	display: none;
+	overflow: hidden;
+	background-color: #aaaaaa;
+}
+
+#maps-section .collapsible-content:nth-child(2n) { background-color: #d0d0d0; }
+#maps-section .collapsible-content:nth-child(4n) { background-color: #e2e2e2; }
+
+.content-img {
+	width: 50%;
+	float: left;
+}
+
+.content-info {
+	box-sizing: border-box;
+	width: 50%;
+	float: left;
+	padding: 20px;
+}
+
+
