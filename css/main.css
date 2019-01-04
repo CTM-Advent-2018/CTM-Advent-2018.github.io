@@ -2,6 +2,7 @@
 body {
 	font-family: "Lato";
 	margin: 0;
+	margin-bottom: 200px;
 	background-color: #f0f0f0;
 	color: #222222;
 	counter-reset: map-num;
@@ -28,6 +29,22 @@ p {
 	height: 100%;
 	display: inline-block;
 	margin-right: 5px;
+}
+
+#header-image-section {
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+}
+
+#description-section {
+	margin-left: auto;
+	margin-right: auto;
+	width: 85%;
+	border-radius: 25px;
+	padding: 30px;
+	margin-top: 30px;
+	background-color: #e2e2e2;
 }
 
 #maps-section {
@@ -59,7 +76,6 @@ p {
 .button-secondary { background-color: #41a3f4; }
 .button-secondary:hover { background-color: #327bbc; }
 
-/* Style the button that is used to open and close the collapsible content */
 .collapsible {
 	background-color: #dddddd;
 	color: #444444;
@@ -105,12 +121,32 @@ p {
 	text-align: center;
 }
 
-.color-green-0 { background-color: #00aa33; }
-.color-red-0 { background-color: #ff0000; }
+.version-tag           { background-color: #00aa33; }
+.difficulty-tag-easy   { background-color: #ffce7f; } /*ffb29b*/
+.difficulty-tag-medium { background-color: #ff9047; } /*ff7f59*/
+.difficulty-tag-hard   { background-color: #f94b16; } /*f94b16*/
+.length-tag-short      { background-color: #9bbcff; } /*9ba9ff*/
+.length-tag-medium     { background-color: #598aff; } /*5977ff*/
+.length-tag-long       { background-color: #1543f9; } /*1543f9*/
+.difficulty-tag-easy, .difficulty-tag-medium, .difficulty-tag-hard,
+.length-tag-short, .length-tag-medium, .length-tag-long { width: 90px; }
+
+.tag-list {
+	display: inline-block;
+	color: #ffffff;
+	margin-bottom: 10px;
+	width: 450px;
+}
+
+.tag-list-header {
+	display: inline-block;
+	width: 100px;
+	font-weight: bold;
+	color: #000000;
+}
 
 .theme-dark { background-color: #444444; }
 
-/* Style the collapsible content. Note: hidden by default */
 .collapsible-content {
 	display: none;
 	overflow: hidden;
@@ -132,4 +168,38 @@ p {
 	padding: 20px;
 }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
 
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}

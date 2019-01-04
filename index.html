@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
 	<link rel="stylesheet" type="text/css" href="/css/fontello.css">
 
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
 </head>
 <body>
@@ -18,24 +18,71 @@
 			<img id="navbar-icon" src="/img/snowflake.png">
 			CTM Advent 2018
 		</div>
+
+		<div id="header-image-section">
+			<img src="https://i.imgur.com/cS9sXGc.png" style="margin: -170px 0 0 0;">
+		</div>
 	</header>
 
-	<div id="maps-section">
+	<section id="description-section">
+		<p>
+			A collection of mini <strong>complete the monument</strong> style maps made for the 2018 winter holiday season. Each map consists of two required objectives (red and green wool), as well as bonus objective (music disc) for those with an inclination for challenge or exploration. Maps should be comfortably beatable in a single sitting and are also designed with speedrunning in mind, although not intended as the primary play style. 
+		</p>
+
+		<p>
+			Hover over any of the tags for more details.
+		</p>
+
+		<div class="tag-lists">
+			<div class="tag-list">
+				<span class="tag-list-header">Difficulty:</span>
+				<span class="tooltip description-tag difficulty-tag-easy"> <span class="icon-skull"></span> Easy </span>
+				<span class="tooltip description-tag difficulty-tag-medium"> <span class="icon-skull"></span> Medium </span>
+				<span class="tooltip description-tag difficulty-tag-hard"> <span class="icon-skull"></span> Hard </span>
+			</div>
+			<span class="tag-list-description">
+				The relative level of challenge that the map poses.
+			</span>
+			<br>
+
+			<div class="tag-list">
+				<span class="tag-list-header">Length:</span>
+				<span class="tooltip description-tag length-tag-short"> <span class="icon-clock"></span> Short </span>
+				<span class="tooltip description-tag length-tag-medium"> <span class="icon-clock"></span> Medium </span>
+				<span class="tooltip description-tag length-tag-long"> <span class="icon-clock"></span> Long </span>
+			</div>
+			<span class="tag-list-description">
+				The relative time it takes to complete the map. 
+			</span>
+			<br>
+
+			<div class="tag-list">				
+				<span class="tag-list-header">MC Version:</span>
+				<span class="tooltip description-tag version-tag"> 1.13+ </span>
+			</div>
+			<span class="tag-list-description">
+				The compatible versions of Minecraft that the map can be played in.
+			</span>
+			<br>
+
+			<div class="tag-list">				
+				<span class="tag-list-header">Map Version:</span>
+				<span class="description-tag theme-dark"> v1.0 </span>
+			</div>
+			<span class="tag-list-description">
+				The most recent version of the map available. v1.0 is the original release version.
+			</span>
+		</div>
+	</section>
+
+	<section id="maps-section">
 		<button class="collapsible">
 			<span class="item-title">Firestorm Skies</span>
 			<div class="item-description">
-				<span class="description-tag color-red-0">
-					<span class="icon-skull"></span> Hard
-				</span>
-				<span class="description-tag color-red-0">
-					<span class="icon-clock"></span> Long
-				</span>
-				<span class="description-tag color-green-0">
-					MC Version: 1.13+
-				</span>
-				<span class="description-tag theme-dark">
-					v1.0
-				</span>
+				<span class="tooltip description-tag difficulty-tag-medium"> <span class="icon-skull"></span> Medium </span>
+				<span class="tooltip description-tag length-tag-medium"> <span class="icon-clock"></span> Medium </span>
+				<span class="tooltip description-tag version-tag"> 1.13+ </span>
+				<span class="description-tag theme-dark"> v1.0 </span>
 			</div>
 		</button>
 		<div class="collapsible-content">
@@ -49,7 +96,7 @@
 				<button class="flat-button button-secondary">Feedback</button>
 			</div>
 		</div>
-	</div>
+	</section>
 
 	<script type="text/javascript" src="/js/main.js"></script>
 </body>
