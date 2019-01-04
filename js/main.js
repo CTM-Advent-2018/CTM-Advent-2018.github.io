@@ -55,6 +55,7 @@
 	 addTooltip("length-tag-medium", "Moderately sized with some element of exploration. Gear is a good mix of being given and needing to be found.");
 	 addTooltip("length-tag-long", "Comparable scale to an area in a full CTM map. Usually requires more collecting, crafting, and general survival.");
 
-	 addTooltip("version-tag", "Compatible Minecraft versions.");
+	 addTooltip("mc-version-tag", "Compatible Minecraft versions.");
+	 addTooltip("map-version-tag", "Most recent version of this map.");
 	 addTooltip("star-tag", "Not hardcore mode.");
 	})();

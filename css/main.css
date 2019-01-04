@@ -132,7 +132,8 @@ p {
 	text-align: center;
 }
 
-.version-tag           { background-color: #00aa33; }
+.mc-version-tag           { background-color: #00aa33; }
+.map-version-tag { background-color: #444444; }
 .spoiler-tag { background-color: #000000; }
 .star-tag { background-color: transparent; color: #cd13dd; }
 .difficulty-tag-easy   { background-color: #ffce7f; } /*ffb29b*/
@@ -157,8 +158,6 @@ p {
 	font-weight: bold;
 	color: #000000;
 }
-
-.theme-dark { background-color: #444444; }
 
 .collapsible-content {
 	display: none;
