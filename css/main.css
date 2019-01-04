@@ -2,7 +2,6 @@
 body {
 	font-family: "Lato";
 	margin: 0;
-	margin-bottom: 200px;
 	background-color: #f0f0f0;
 	color: #222222;
 	counter-reset: map-num;
@@ -11,6 +10,18 @@ body {
 p {
 	margin-top: 0;
 }
+
+footer {
+	box-sizing: border-box;
+	margin-top: 100px;
+	padding: 50px;
+	text-align: center;
+	background-color: #dddddd;
+	color: #999999;
+}
+
+footer a { color: #62aad1; }
+footer em { font-style: normal; color: #444444; }
 
 #navbar {
 	height: 50px;
