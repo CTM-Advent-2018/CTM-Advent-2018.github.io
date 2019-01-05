@@ -1,6 +1,7 @@
 (function() {
 	"use strict";
 
+	// Add onClick handlers to expand/collapse collapsible sections
 	var collapsibles = document.getElementsByClassName("collapsible");
 	for (var i = 0; i < collapsibles.length; i++) {
 		collapsibles[i].addEventListener("click", function() {
@@ -12,11 +13,13 @@
 				content.style.display = "block";
 			}
 
+			// Load images when the collapsible is expanded
 			var img = content.getElementsByClassName("content-img")[0];
 			img.setAttribute("src", img.getAttribute("data-src"));
 		});
 	}
 
+	// Add handlers for the "Expand All" and "Collapse All" buttons
 	document.getElementById("expand-all-button").onclick = function() {
 		var collapsibles = document.getElementsByClassName("collapsible");
 		for (var i = 0; i < collapsibles.length; i++) {
@@ -47,6 +50,7 @@
 	 	}
 	 }
 
+	 // Add all tag tooltips
 	 addTooltip("difficulty-tag-easy", "Intended for players familiar with Minecraft survival mode.");
 	 addTooltip("difficulty-tag-medium", "Well rounded challenge intended for players with minimal to moderate CTM experience.");
 	 addTooltip("difficulty-tag-hard", "Intended for CTM veterans or anyone looking to test their mettle.");
@@ -56,6 +60,6 @@
 	 addTooltip("length-tag-long", "Comparable scale to an area in a full CTM map. Usually requires more collecting, crafting, and general survival.");
 
 	 addTooltip("mc-version-tag", "Compatible Minecraft versions.");
-	 addTooltip("map-version-tag", "Most recent version of this map.");
+	 // addTooltip("map-version-tag", "Most recent version of this map.");
 	 addTooltip("star-tag", "Not hardcore mode.");
 	})();
